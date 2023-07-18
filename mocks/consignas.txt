@@ -1,0 +1,7 @@
+- Colores
+	• Azul - #2C3E50
+	• Verde - #18BC9C
+
+- Tipografías (Google Fonts)
+	• Montserrat - Títulos
+	• Lato - Párrafos y demás
