@@ -3,3 +3,10 @@
 	--colorVerde : #18BC9C;
     --familyTitles : 'Montserrat'
 }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,120 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 2022</title>
-    <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="/css/styles.css">
+
+
 
 </head>
-<body class="">
-    <header class="">
-         <a href="#"><h3>freelance portfolio</h3></a>
-        <button>
-            menu <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="">
-            <ul>
-                <li>
-                    <a href="#portfolio">portfolio</a>
-                    <hr>
-                </li>
-                <li>
-                    <a href="#about">about</a>
-                    <hr>
-                </li>
-                <li>
-                    <a href="#contact">contact</a>
-                    <hr>
-                </li>
-            </ul>
-        </nav>
-     
+
+<body class="home">
+    <header class="home__header navbar navbar-expand-lg py-4">
+        <div class="home__header--box container-fluid">
+            <a class="navbar-brand text-white fw-bold display-1" href="#">
+                FREELANCE PORTFOLIO
+            </a>
+            <button class="navbar-toggler home__header--button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span>MENU</span><span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link text-uppercase text-white active" href="#portfolio">portfolio</a>
+                        <hr class="home__header--hr">
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link text-uppercase text-white " href="#about">about</a>
+                        <hr class="home__header--hr">
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#contact" class="nav-link text-uppercase text-white ">contact</a>
+                        <hr class="home__header--hr">
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main class="">
-        <section class="">
+        <section class="main__section--header d-flex flex-column align-items-center gap-3 py-5 text-center">
             <figure>
-                <img src="/img/profile.png" alt="">
+                <img class="main__section--logo" src="/img/profile.png" alt="">
             </figure>
-            <h1>freelance <span>portfolio</span></h1>
-            <div class="">
-                <hr>
-                <h4><i class="fa-solid fa-star"></i></h4>                
-                <hr>
-            </div>
-                <p>Web Developer - Graphic Artist - User Experience Designer</p>
-        </section>
-        <section class="">
-            <h2>portfolio</h2>
-            <div class="">
+            <h1 class="text-uppercase display-1 fw-bold animate__heartBeat">freelance <span>portfolio</span></h1>
+            <div class="main__section--star">
                 <hr>
                 <h4><i class="fa-solid fa-star"></i></h4>
                 <hr>
             </div>
-            <div class="">
-                <figure>
-                    <img src="/img/cabin.png" alt="">
-                </figure>
-                <figure>
-                    <img src="/img/cake.png" alt="">
-                </figure>
-                <figure>
-                    <img src="/img/circus.png" alt="">
-                </figure>
-                <figure>
-                    <img src="/img/game.png" alt="">
-                </figure>
-                <figure>
-                    <img src="/img/safe.png" alt="">
-                </figure>
-                <figure>
-                    <img src="/img/submarine.png" alt="">
-                </figure>
-            </div>
-         
+            <p>Web Developer - Graphic Artist - User Experience Designer</p>
         </section>
-        <section class="">
-            <h2>about</h2>
-            <div class="">
+        <section class="main__section--portfolio px-3 py-5 d-flex flex-column align-items-center gap-3" id="portfolio">
+            <h2 class="fw-bold text-uppercase display-2">portfolio</h2>
+            <div class="main__section--star">
                 <hr>
                 <h4><i class="fa-solid fa-star"></i></h4>
                 <hr>
             </div>
-            <article>
-                <p>Freelance is a free landing page theme created for free use. The download includes the complete source files including HTML, CSS, and JavaScript as weel as optional SASS stylesheets for easy customization</p>
-                <p>Whether you're a student looking to showcase your work, a professional looking to attact clients, or a graphic artist looking to share your projects, this template is the perferct starting point!</p>
-            </article>
-           <a href=""><i class="">
+            <div
+                class="d-flex flex-column flex-md-row column-gap-3  justify-content-center align-items-center flex-wrap">
+                <figure data-aos="zoom-in">
+                    <img width="100%" src="/img/cabin.png" alt="">
+                </figure>
+                <figure  data-aos="zoom-in-up">
+                    <img width="100%" src="/img/cake.png" alt="">
+                </figure>
+                <figure  data-aos="zoom-in-down-right">
+                    <img width="100%" src="/img/circus.png" alt="">
+                </figure>
+                <figure>
+                    <img width="100%" src="/img/game.png" alt="">
+                </figure>
+                <figure  data-aos="zoom-in-down">
+                    <img width="100%" src="/img/safe.png" alt="">
+                </figure>
+                <figure  data-aos="zoom-in-down-left">
+                    <img width="100%" src="/img/submarine.png" alt="">
+                </figure>
+            </div>
+
         </section>
-        <section class="">
-            <h2>contact me</h2>
-            <div class="">
+        <section class="main__section--about p-5 d-flex flex-column gap-3 align-items-center" id="about">
+            <h2 class="fw-bold text-uppercase display-2">about</h2>
+            <div class="main__section--star">
                 <hr>
                 <h4><i class="fa-solid fa-star"></i></h4>
                 <hr>
             </div>
-            <form action="">
-                <div class="">
-                    <label for="">Name</label>
-                    <input class="">
+            <div class="main__section--about--text d-flex flex-column gap-3 flex-lg-row ">
+                <p>Freelance is a free landing page theme created for free use. The download includes the complete
+                    source files including HTML, CSS, and JavaScript as weel as optional SASS stylesheets for easy
+                    customization</p>
+                <p>Whether you're a student looking to showcase your work, a professional looking to attact clients, or
+                    a graphic artist looking to share your projects, this template is the perferct starting point!</p>
+            </div>
+            <a href=""><i class=""></i></a>
+        </section>
+        <section class="main__section--contact py-5  px-3 d-flex flex-column align-items-center gap-3 " id="contact">
+            <h2 class="fw-bold text-uppercase display-3 text-center">contact me</h2>
+            <div class="main__section--star">
+                <hr>
+                <h4><i class="fa-solid fa-star"></i></h4>
+                <hr>
+            </div>
+            <form action="" class="home__section--form">
+                <div class="mb-3">
+                    <label class="form-label" for="">Name</label>
+                    <input class="form-control">
                 </div>
-                <div class="">
-                    <label for="">Email Address</label>
-                    <input class="">
+                <div class="mb-3">
+                    <label class="form-label" for="">Email Address</label>
+                    <input class="form-control">
                 </div>
-                <div class="">
-                    <label for="">Phone Number</label>
-                    <input class="">
+                <div class="mb-3">
+                    <label class="form-label" for="">Phone Number</label>
+                    <input class="form-control">
                 </div>
-                <div class="">
-                    <label for="">Message</label>
-                    <textarea class="">
+                <div class="mb-3">
+                    <label class="form-label" for="">Message</label>
+                    <textarea class="form-control" class=""></textarea>
                 </div>
-                <div class="">
-                    <div class="">
-                    <button>Send</button>
+                <div class="text-start">
+                    <button class="home__section--button">Send</button>
                 </div>
             </form>
         </section>
@@ -129,23 +150,37 @@
             <article class="">
                 <h3>around the web</h3>
                 <div class="">
-                    <a href=""><i class="">
-                    <a href=""><i class="">
-                    <a href=""><i class="">
-                    <a href=""><i class="">
-                    <a href=""><i class="">
+                    <a href=""><i class=""></i></a>
+                    <a href=""><i class=""></i></a>
+                    <a href=""><i class=""></i></a>
+                    <a href=""><i class=""></i></a>
+                    <a href=""><i class=""></i></a>
                 </div>
             </article>
             <article class="">
                 <h3>about freelancer</h3>
-                <p>Freelance is free and open souce landing page theme created to <span>your free personal use</span>.</p>
+                <p>Freelance is free and open souce landing page theme created to <span>your free personal use</span>.
+                </p>
             </article>
         </section>
         <section class="">
-            <p >Copyright<i class="fa fa-copyright"></i> Your Website 2023</p>
+            <p>Copyright<i class="fa fa-copyright"></i> Your Website 2023</p>
         </section>
-       
+
     </footer>
+
+    <a class="home__buttom--up" href="#"><i class="fas fa-chevron-up fa-lg"></i></a>
+
+
+
     <script src="/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

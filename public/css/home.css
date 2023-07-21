@@ -1,0 +1,142 @@
+@keyframes lineHeader {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes rotationLogo {
+    0%{
+        transform: rotateY(-180deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.home__header {
+  background-color: var(--colorAzul);
+  color: #ffffff;
+}
+
+.home__header--hr {
+    margin: 0;
+    display: none;
+    animation: lineHeader .5s normal linear;
+}
+
+.home__header .nav-link:hover ~ hr {
+    display: block;
+}
+
+.home__header--button {
+  background-color: var(--colorVerde);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 0;
+}
+
+.main__section--header {
+  background-color: var(--colorVerde);
+  color: #ffffff;
+}
+
+.main__section--star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.main__section--star hr {
+  background-color: white;
+  width: 80px;
+  height: 3px;
+  opacity: 1;
+}
+
+.main__section--logo {
+    animation: rotationLogo 3s linear infinite normal;
+}
+
+
+.main__section--about {
+    background-color: var(--colorVerde);
+    color: #ffffff;
+}
+
+.main__section--about--text {
+    line-height: 30px;
+}
+
+
+.home__section--button {
+    background-color: var(--colorVerde);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20PX;
+    color: #ffffff;;
+    
+  }
+
+.home__section--form {
+    width: 300px;
+}
+
+.home__buttom--up {
+    position: sticky;
+    bottom: 20px;
+    left: 85vw;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    
+}
+
+@media (min-width: 481px) {
+  figure {
+    width: 300px;
+  }
+
+  .main__section--about--text {
+    width: 600px;
+}
+
+.home__section--form {
+    width: 600px;
+}
+}
+
+@media (min-width: 769px) {
+
+    .home__header {
+       height: 100px;
+      }
+  figure {
+    width: 500px;
+  }
+
+  .main__section--about--text {
+    width: 900px;
+}
+
+
+}
